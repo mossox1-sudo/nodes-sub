@@ -1,0 +1,473 @@
+{
+ "log": {
+  "level": "warn"
+ },
+ "dns": {
+  "servers": [
+   {
+    "tag": "remote",
+    "type": "https",
+    "server": "8.8.8.8"
+   },
+   {
+    "tag": "local",
+    "type": "udp",
+    "server": "223.5.5.5"
+   }
+  ],
+  "rules": [
+   {
+    "rule_set": [
+     "geosite-cn"
+    ],
+    "server": "local"
+   }
+  ],
+  "final": "remote",
+  "strategy": "prefer_ipv4"
+ },
+ "outbounds": [
+  {
+   "type": "selector",
+   "tag": "proxy",
+   "outbounds": [
+    "auto",
+    "01-美国NewYorkCity-vless",
+    "02-未知-vless",
+    "03-法国Paris-trojan",
+    "04-荷兰Amsterdam-vless",
+    "05-保加利亚Sofia-vless",
+    "06-荷兰Amsterdam-vless",
+    "07-荷兰Amsterdam-vless",
+    "08-芬兰Helsinki-vless",
+    "09-荷兰Amsterdam-vless",
+    "10-意大利Milan-ss",
+    "11-美国SanJose-vless",
+    "12-阿联酋Fujairah-vless",
+    "13-意大利Milan-ss",
+    "14-美国SaltLakeCity-vless",
+    "15-阿联酋Dubai-vless",
+    "16-白俄罗斯Minsk-vless",
+    "17-未知-vless",
+    "18-白俄罗斯Minsk-vless",
+    "direct"
+   ],
+   "default": "auto"
+  },
+  {
+   "type": "urltest",
+   "tag": "auto",
+   "outbounds": [
+    "01-美国NewYorkCity-vless",
+    "02-未知-vless",
+    "03-法国Paris-trojan",
+    "04-荷兰Amsterdam-vless",
+    "05-保加利亚Sofia-vless",
+    "06-荷兰Amsterdam-vless",
+    "07-荷兰Amsterdam-vless",
+    "08-芬兰Helsinki-vless",
+    "09-荷兰Amsterdam-vless",
+    "10-意大利Milan-ss",
+    "11-美国SanJose-vless",
+    "12-阿联酋Fujairah-vless",
+    "13-意大利Milan-ss",
+    "14-美国SaltLakeCity-vless",
+    "15-阿联酋Dubai-vless",
+    "16-白俄罗斯Minsk-vless",
+    "17-未知-vless",
+    "18-白俄罗斯Minsk-vless"
+   ],
+   "url": "https://www.google.com/generate_204",
+   "interval": "10m",
+   "tolerance": 150
+  },
+  {
+   "type": "vless",
+   "server": "saas.sin.fan",
+   "server_port": 2087,
+   "uuid": "5d7b401c-78fa-4254-872e-6d42bf7e75ec",
+   "tls": {
+    "enabled": true,
+    "server_name": "vp4.1145678.xyz",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "chrome"
+    }
+   },
+   "transport": {
+    "type": "ws",
+    "path": "/blogs/go/posts",
+    "headers": {
+     "Host": "vp4.1145678.xyz"
+    }
+   },
+   "tag": "01-美国NewYorkCity-vless"
+  },
+  {
+   "type": "vless",
+   "server": "188.164.248.216",
+   "server_port": 443,
+   "uuid": "d342d11e-d224-4463-b982-532309285094",
+   "tls": {
+    "enabled": true,
+    "server_name": "ccc.010304.xyz"
+   },
+   "transport": {
+    "type": "ws",
+    "path": "/fp=chrome",
+    "headers": {
+     "Host": "ccc.010304.xyz"
+    }
+   },
+   "tag": "02-未知-vless"
+  },
+  {
+   "type": "trojan",
+   "server": "104.18.9.83",
+   "server_port": 443,
+   "password": "humanity",
+   "tls": {
+    "enabled": true,
+    "server_name": "www.calmlunch.com"
+   },
+   "transport": {
+    "type": "ws",
+    "path": "/assignment",
+    "headers": {
+     "Host": "www.calmlunch.com"
+    }
+   },
+   "tag": "03-法国Paris-trojan"
+  },
+  {
+   "type": "vless",
+   "server": "snow.betust.net",
+   "server_port": 443,
+   "uuid": "3b1fa839-2cb9-4511-9711-08800450aea3",
+   "flow": "xtls-rprx-vision",
+   "tls": {
+    "enabled": true,
+    "server_name": "api37.betust.net",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "chrome"
+    },
+    "reality": {
+     "enabled": true,
+     "public_key": "92lzqaBZnD5IP_subNDLotGMBs4u7STDMhqoBz1OADE",
+     "short_id": "b7a5c406"
+    }
+   },
+   "tag": "04-荷兰Amsterdam-vless"
+  },
+  {
+   "type": "vless",
+   "server": "104.152.48.248",
+   "server_port": 443,
+   "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
+   "tls": {
+    "enabled": true,
+    "server_name": "snip.edgeoneai.cc.cd",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "chrome"
+    }
+   },
+   "transport": {
+    "type": "ws",
+    "path": "/",
+    "headers": {
+     "Host": "snip.edgeoneai.cc.cd"
+    }
+   },
+   "tag": "05-保加利亚Sofia-vless"
+  },
+  {
+   "type": "vless",
+   "server": "s171.wagahaha.xyz",
+   "server_port": 443,
+   "uuid": "30e52776-55ac-3cb4-8d36-e2910f07e2c3",
+   "flow": "xtls-rprx-vision",
+   "tls": {
+    "enabled": true,
+    "server_name": "u695098u7dae9c0cs220.gogocs.xyz",
+    "alpn": [
+     "h2",
+     "http/1.1"
+    ],
+    "utls": {
+     "enabled": true,
+     "fingerprint": "firefox"
+    }
+   },
+   "tag": "06-荷兰Amsterdam-vless"
+  },
+  {
+   "type": "vless",
+   "server": "62.105.220.106",
+   "server_port": 443,
+   "uuid": "30e52776-55ac-3cb4-8d36-e2910f07e2c3",
+   "flow": "xtls-rprx-vision",
+   "tls": {
+    "enabled": true,
+    "server_name": "u695098u7dae9c0cs220.gogocs.xyz",
+    "alpn": [
+     "h2",
+     "http/1.1"
+    ],
+    "utls": {
+     "enabled": true,
+     "fingerprint": "firefox"
+    }
+   },
+   "tag": "07-荷兰Amsterdam-vless"
+  },
+  {
+   "type": "vless",
+   "server": "144.31.34.146",
+   "server_port": 2096,
+   "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
+   "tls": {
+    "enabled": true,
+    "server_name": "fi1.merky.one",
+    "alpn": [
+     "http/1.1"
+    ],
+    "utls": {
+     "enabled": true,
+     "fingerprint": "firefox"
+    }
+   },
+   "transport": {
+    "type": "ws",
+    "path": "/mky-ws-4f19c8a7",
+    "headers": {
+     "Host": "fi1.merky.one"
+    }
+   },
+   "tag": "08-芬兰Helsinki-vless"
+  },
+  {
+   "type": "vless",
+   "server": "s170.gogocs.xyz",
+   "server_port": 443,
+   "uuid": "30e52776-55ac-3cb4-8d36-e2910f07e2c3",
+   "flow": "xtls-rprx-vision",
+   "tls": {
+    "enabled": true,
+    "server_name": "u695098u7dae9c0cs220.gogocs.xyz",
+    "alpn": [
+     "h2",
+     "http/1.1"
+    ],
+    "utls": {
+     "enabled": true,
+     "fingerprint": "firefox"
+    }
+   },
+   "tag": "09-荷兰Amsterdam-vless"
+  },
+  {
+   "type": "shadowsocks",
+   "server": "202.50.253.27",
+   "server_port": 19999,
+   "method": "aes-256-gcm",
+   "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+   "tag": "10-意大利Milan-ss"
+  },
+  {
+   "type": "vless",
+   "server": "funagfrdfs.alixxplay.com",
+   "server_port": 30892,
+   "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+   "flow": "xtls-rprx-vision",
+   "tls": {
+    "enabled": true,
+    "server_name": "us1p1.xn--ghq880n3na965a.com",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "safari"
+    },
+    "reality": {
+     "enabled": true,
+     "public_key": "YinI5MijeZpRatg6QNDvP0qXEif-6VHC6gV5yoji4i4",
+     "short_id": "3d31326f95"
+    }
+   },
+   "tag": "11-美国SanJose-vless"
+  },
+  {
+   "type": "vless",
+   "server": "95.174.68.188",
+   "server_port": 14430,
+   "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
+   "transport": {
+    "type": "ws",
+    "path": "/vless",
+    "headers": {
+     "Host": "95.174.68.188"
+    }
+   },
+   "tag": "12-阿联酋Fujairah-vless"
+  },
+  {
+   "type": "shadowsocks",
+   "server": "202.50.253.72",
+   "server_port": 19999,
+   "method": "aes-256-gcm",
+   "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+   "tag": "13-意大利Milan-ss"
+  },
+  {
+   "type": "vless",
+   "server": "funagfrdfs.alixxplay.com",
+   "server_port": 34379,
+   "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+   "flow": "xtls-rprx-vision",
+   "tls": {
+    "enabled": true,
+    "server_name": "us1p1.xn--ghq880n3na965a.com",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "random"
+    },
+    "reality": {
+     "enabled": true,
+     "public_key": "KfOrtENkHAXDFlsCluw6fv62Q-WuJXCKI98XZihtemA",
+     "short_id": "e51285e3"
+    }
+   },
+   "tag": "14-美国SaltLakeCity-vless"
+  },
+  {
+   "type": "vless",
+   "server": "uae.unixzone.us",
+   "server_port": 22573,
+   "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+   "transport": {
+    "type": "ws",
+    "path": "/",
+    "headers": {
+     "Host": "uae.unixzone.us"
+    }
+   },
+   "tag": "15-阿联酋Dubai-vless"
+  },
+  {
+   "type": "vless",
+   "server": "178.172.227.124",
+   "server_port": 14430,
+   "uuid": "1af36694-b548-4b18-89a0-bc076eab4ed7",
+   "transport": {
+    "type": "ws",
+    "path": "/vless",
+    "headers": {
+     "Host": "178.172.227.124"
+    }
+   },
+   "tag": "16-白俄罗斯Minsk-vless"
+  },
+  {
+   "type": "vless",
+   "server": "103.199.19.132",
+   "server_port": 8443,
+   "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
+   "tls": {
+    "enabled": true,
+    "server_name": "snip.edgeoneai.cc.cd",
+    "utls": {
+     "enabled": true,
+     "fingerprint": "chrome"
+    }
+   },
+   "transport": {
+    "type": "ws",
+    "path": "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443",
+    "headers": {
+     "Host": "snip.edgeoneai.cc.cd"
+    }
+   },
+   "tag": "17-未知-vless"
+  },
+  {
+   "type": "vless",
+   "server": "95.128.71.79",
+   "server_port": 14430,
+   "uuid": "8cef7621-c6f0-486e-b51d-59c30c5b0b25",
+   "transport": {
+    "type": "ws",
+    "path": "/vless",
+    "headers": {
+     "Host": "95.128.71.79"
+    }
+   },
+   "tag": "18-白俄罗斯Minsk-vless"
+  },
+  {
+   "type": "direct",
+   "tag": "direct"
+  }
+ ],
+ "route": {
+  "rule_set": [
+   {
+    "tag": "geosite-cn",
+    "type": "remote",
+    "format": "binary",
+    "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-cn.srs",
+    "download_detour": "direct",
+    "update_interval": "1d"
+   },
+   {
+    "tag": "geoip-cn",
+    "type": "remote",
+    "format": "binary",
+    "url": "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-cn.srs",
+    "download_detour": "direct",
+    "update_interval": "1d"
+   },
+   {
+    "tag": "geosite-ads",
+    "type": "remote",
+    "format": "binary",
+    "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ads-all.srs",
+    "download_detour": "direct",
+    "update_interval": "1d"
+   }
+  ],
+  "rules": [
+   {
+    "rule_set": [
+     "geosite-ads"
+    ],
+    "action": "reject"
+   },
+   {
+    "ip_is_private": true,
+    "outbound": "direct"
+   },
+   {
+    "rule_set": [
+     "geosite-cn"
+    ],
+    "outbound": "direct"
+   },
+   {
+    "rule_set": [
+     "geoip-cn"
+    ],
+    "outbound": "direct"
+   }
+  ],
+  "final": "proxy",
+  "auto_detect_interface": true,
+  "default_domain_resolver": {
+   "server": "local"
+  }
+ },
+ "experimental": {
+  "cache_file": {
+   "enabled": true
+  }
+ }
+}
