@@ -32,17 +32,16 @@
    "tag": "proxy",
    "outbounds": [
     "auto",
-    "01-ChileSantiago-vless",
-    "02-ChileSantiago-vless",
-    "03-ChileSantiago-vless",
-    "04-ChileSantiago-vless",
-    "05-ChileSantiago-vless",
-    "06-ChileSantiago-vless",
-    "07-芬兰Helsinki-vless",
-    "08-美国SaltLakeCity-vless",
-    "09-保加利亚Sofia-vless",
-    "10-阿联酋Dubai-vless",
-    "11-阿联酋Fujairah-vless",
+    "01-意大利Milan-ss",
+    "02-荷兰Amsterdam-vless",
+    "03-荷兰Amsterdam-vless",
+    "04-德国Dreieich-vless",
+    "05-未知-vless",
+    "06-阿联酋Fujairah-vless",
+    "07-荷兰Amsterdam-vless",
+    "08-阿联酋Dubai-vless",
+    "09-意大利Milan-ss",
+    "10-意大利Milan-ss",
     "direct"
    ],
    "default": "auto"
@@ -51,112 +50,40 @@
    "type": "urltest",
    "tag": "auto",
    "outbounds": [
-    "01-ChileSantiago-vless",
-    "02-ChileSantiago-vless",
-    "03-ChileSantiago-vless",
-    "04-ChileSantiago-vless",
-    "05-ChileSantiago-vless",
-    "06-ChileSantiago-vless",
-    "07-芬兰Helsinki-vless",
-    "08-美国SaltLakeCity-vless",
-    "09-保加利亚Sofia-vless",
-    "10-阿联酋Dubai-vless",
-    "11-阿联酋Fujairah-vless"
+    "01-意大利Milan-ss",
+    "02-荷兰Amsterdam-vless",
+    "03-荷兰Amsterdam-vless",
+    "04-德国Dreieich-vless",
+    "05-未知-vless",
+    "06-阿联酋Fujairah-vless",
+    "07-荷兰Amsterdam-vless",
+    "08-阿联酋Dubai-vless",
+    "09-意大利Milan-ss",
+    "10-意大利Milan-ss"
    ],
    "url": "https://www.google.com/generate_204",
    "interval": "10m",
    "tolerance": 150
   },
   {
-   "type": "vless",
-   "server": "platform106.golnamakcert.top",
-   "server_port": 80,
-   "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-   "transport": {
-    "type": "ws",
-    "path": "/platform106",
-    "headers": {
-     "Host": "platform106.halalkhor.info"
-    }
-   },
-   "tag": "01-ChileSantiago-vless"
+   "type": "shadowsocks",
+   "server": "202.50.253.36",
+   "server_port": 19999,
+   "method": "aes-256-gcm",
+   "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+   "tag": "01-意大利Milan-ss"
   },
   {
    "type": "vless",
-   "server": "platform102.golnamakcert.top",
-   "server_port": 80,
-   "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-   "transport": {
-    "type": "ws",
-    "path": "/platform102",
-    "headers": {
-     "Host": "platform102.halalkhor.info"
-    }
-   },
-   "tag": "02-ChileSantiago-vless"
-  },
-  {
-   "type": "vless",
-   "server": "platform103.golnamakcert.top",
-   "server_port": 80,
-   "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-   "transport": {
-    "type": "ws",
-    "path": "/platform103",
-    "headers": {
-     "Host": "platform103.halalkhor.info"
-    }
-   },
-   "tag": "03-ChileSantiago-vless"
-  },
-  {
-   "type": "vless",
-   "server": "platform109.golnamakcert.top",
-   "server_port": 80,
-   "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-   "transport": {
-    "type": "ws",
-    "path": "/platform109",
-    "headers": {
-     "Host": "platform109.halalkhor.info"
-    }
-   },
-   "tag": "04-ChileSantiago-vless"
-  },
-  {
-   "type": "vless",
-   "server": "platform108.golnamakcert.top",
-   "server_port": 80,
-   "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-   "transport": {
-    "type": "ws",
-    "path": "/platform108",
-    "headers": {
-     "Host": "platform108.halalkhor.info"
-    }
-   },
-   "tag": "05-ChileSantiago-vless"
-  },
-  {
-   "type": "vless",
-   "server": "platform107.golnamakcert.top",
-   "server_port": 80,
-   "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-   "transport": {
-    "type": "ws",
-    "path": "/platform107"
-   },
-   "tag": "06-ChileSantiago-vless"
-  },
-  {
-   "type": "vless",
-   "server": "144.31.34.146",
-   "server_port": 2096,
-   "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
+   "server": "s170.gogocs.xyz",
+   "server_port": 443,
+   "uuid": "30e52776-55ac-3cb4-8d36-e2910f07e2c3",
+   "flow": "xtls-rprx-vision",
    "tls": {
     "enabled": true,
-    "server_name": "fi1.merky.one",
+    "server_name": "u695098u7dae9c0cs220.gogocs.xyz",
     "alpn": [
+     "h2",
      "http/1.1"
     ],
     "utls": {
@@ -164,40 +91,32 @@
      "fingerprint": "firefox"
     }
    },
-   "transport": {
-    "type": "ws",
-    "path": "/mky-ws-4f19c8a7",
-    "headers": {
-     "Host": "fi1.merky.one"
-    }
-   },
-   "tag": "07-芬兰Helsinki-vless"
+   "tag": "02-荷兰Amsterdam-vless"
   },
   {
    "type": "vless",
-   "server": "funagfrdfs.alixxplay.com",
-   "server_port": 34379,
-   "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+   "server": "62.105.220.106",
+   "server_port": 443,
+   "uuid": "30e52776-55ac-3cb4-8d36-e2910f07e2c3",
    "flow": "xtls-rprx-vision",
    "tls": {
     "enabled": true,
-    "server_name": "us1p1.xn--ghq880n3na965a.com",
+    "server_name": "u695098u7dae9c0cs220.gogocs.xyz",
+    "alpn": [
+     "h2",
+     "http/1.1"
+    ],
     "utls": {
      "enabled": true,
-     "fingerprint": "random"
-    },
-    "reality": {
-     "enabled": true,
-     "public_key": "KfOrtENkHAXDFlsCluw6fv62Q-WuJXCKI98XZihtemA",
-     "short_id": "e51285e3"
+     "fingerprint": "firefox"
     }
    },
-   "tag": "08-美国SaltLakeCity-vless"
+   "tag": "03-荷兰Amsterdam-vless"
   },
   {
    "type": "vless",
-   "server": "104.152.48.248",
-   "server_port": 443,
+   "server": "45.157.233.109",
+   "server_port": 2087,
    "uuid": "495c7195-85b8-498a-bf20-2ea9ce9175b5",
    "tls": {
     "enabled": true,
@@ -214,21 +133,25 @@
      "Host": "snip.edgeoneai.cc.cd"
     }
    },
-   "tag": "09-保加利亚Sofia-vless"
+   "tag": "04-德国Dreieich-vless"
   },
   {
    "type": "vless",
-   "server": "uae.unixzone.us",
-   "server_port": 22573,
-   "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+   "server": "155.103.71.142",
+   "server_port": 443,
+   "uuid": "d342d11e-d224-4463-b982-532309285094",
+   "tls": {
+    "enabled": true,
+    "server_name": "ccc.010304.xyz"
+   },
    "transport": {
     "type": "ws",
-    "path": "/",
+    "path": "/fp=chromefp=chrome",
     "headers": {
-     "Host": "uae.unixzone.us"
+     "Host": "ccc.010304.xyz"
     }
    },
-   "tag": "10-阿联酋Dubai-vless"
+   "tag": "05-未知-vless"
   },
   {
    "type": "vless",
@@ -242,7 +165,57 @@
      "Host": "95.174.68.188"
     }
    },
-   "tag": "11-阿联酋Fujairah-vless"
+   "tag": "06-阿联酋Fujairah-vless"
+  },
+  {
+   "type": "vless",
+   "server": "s171.wagahaha.xyz",
+   "server_port": 443,
+   "uuid": "30e52776-55ac-3cb4-8d36-e2910f07e2c3",
+   "flow": "xtls-rprx-vision",
+   "tls": {
+    "enabled": true,
+    "server_name": "u695098u7dae9c0cs220.gogocs.xyz",
+    "alpn": [
+     "h2",
+     "http/1.1"
+    ],
+    "utls": {
+     "enabled": true,
+     "fingerprint": "firefox"
+    }
+   },
+   "tag": "07-荷兰Amsterdam-vless"
+  },
+  {
+   "type": "vless",
+   "server": "uae.unixzone.us",
+   "server_port": 22573,
+   "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+   "transport": {
+    "type": "ws",
+    "path": "/",
+    "headers": {
+     "Host": "uae.unixzone.us"
+    }
+   },
+   "tag": "08-阿联酋Dubai-vless"
+  },
+  {
+   "type": "shadowsocks",
+   "server": "202.50.253.72",
+   "server_port": 19999,
+   "method": "aes-256-gcm",
+   "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+   "tag": "09-意大利Milan-ss"
+  },
+  {
+   "type": "shadowsocks",
+   "server": "202.50.253.63",
+   "server_port": 19999,
+   "method": "aes-256-gcm",
+   "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+   "tag": "10-意大利Milan-ss"
   },
   {
    "type": "direct",
