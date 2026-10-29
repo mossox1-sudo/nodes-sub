@@ -40,13 +40,15 @@
     "06-意大利Milan-ss",
     "07-意大利Milan-ss",
     "08-意大利Milan-ss",
-    "09-荷兰Amsterdam-vless",
-    "10-荷兰Amsterdam-vless",
-    "11-ArmeniaYerevan-vless",
+    "09-意大利Milan-ss",
+    "10-意大利Milan-ss",
+    "11-荷兰Amsterdam-vless",
     "12-未知-vless",
-    "13-未知-vless",
-    "14-荷兰Amsterdam-vless",
+    "13-阿联酋Dubai-vless",
+    "14-阿联酋Dubai-vless",
     "15-阿联酋Fujairah-vless",
+    "16-荷兰Amsterdam-vless",
+    "17-荷兰Amsterdam-vless",
     "direct"
    ],
    "default": "auto"
@@ -63,13 +65,15 @@
     "06-意大利Milan-ss",
     "07-意大利Milan-ss",
     "08-意大利Milan-ss",
-    "09-荷兰Amsterdam-vless",
-    "10-荷兰Amsterdam-vless",
-    "11-ArmeniaYerevan-vless",
+    "09-意大利Milan-ss",
+    "10-意大利Milan-ss",
+    "11-荷兰Amsterdam-vless",
     "12-未知-vless",
-    "13-未知-vless",
-    "14-荷兰Amsterdam-vless",
-    "15-阿联酋Fujairah-vless"
+    "13-阿联酋Dubai-vless",
+    "14-阿联酋Dubai-vless",
+    "15-阿联酋Fujairah-vless",
+    "16-荷兰Amsterdam-vless",
+    "17-荷兰Amsterdam-vless"
    ],
    "url": "https://www.google.com/generate_204",
    "interval": "10m",
@@ -77,7 +81,7 @@
   },
   {
    "type": "shadowsocks",
-   "server": "202.50.253.63",
+   "server": "202.50.253.72",
    "server_port": 19999,
    "method": "aes-256-gcm",
    "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
@@ -85,7 +89,7 @@
   },
   {
    "type": "shadowsocks",
-   "server": "202.50.253.45",
+   "server": "202.50.253.81",
    "server_port": 19999,
    "method": "aes-256-gcm",
    "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
@@ -93,7 +97,7 @@
   },
   {
    "type": "shadowsocks",
-   "server": "202.50.253.27",
+   "server": "202.50.253.72",
    "server_port": 19999,
    "method": "aes-256-gcm",
    "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
@@ -101,7 +105,7 @@
   },
   {
    "type": "shadowsocks",
-   "server": "202.50.253.63",
+   "server": "202.50.253.36",
    "server_port": 19999,
    "method": "aes-256-gcm",
    "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
@@ -117,7 +121,7 @@
   },
   {
    "type": "shadowsocks",
-   "server": "202.50.253.18",
+   "server": "202.50.253.63",
    "server_port": 19999,
    "method": "aes-256-gcm",
    "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
@@ -125,7 +129,7 @@
   },
   {
    "type": "shadowsocks",
-   "server": "202.50.253.72",
+   "server": "202.50.253.18",
    "server_port": 19999,
    "method": "aes-256-gcm",
    "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
@@ -133,31 +137,27 @@
   },
   {
    "type": "shadowsocks",
-   "server": "202.50.253.81",
+   "server": "202.50.253.54",
    "server_port": 19999,
    "method": "aes-256-gcm",
    "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
    "tag": "08-意大利Milan-ss"
   },
   {
-   "type": "vless",
-   "server": "62.105.220.106",
-   "server_port": 443,
-   "uuid": "30e52776-55ac-3cb4-8d36-e2910f07e2c3",
-   "flow": "xtls-rprx-vision",
-   "tls": {
-    "enabled": true,
-    "server_name": "u695098u7dae9c0cs220.gogocs.xyz",
-    "alpn": [
-     "h2",
-     "http/1.1"
-    ],
-    "utls": {
-     "enabled": true,
-     "fingerprint": "firefox"
-    }
-   },
-   "tag": "09-荷兰Amsterdam-vless"
+   "type": "shadowsocks",
+   "server": "202.50.253.45",
+   "server_port": 19999,
+   "method": "aes-256-gcm",
+   "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+   "tag": "09-意大利Milan-ss"
+  },
+  {
+   "type": "shadowsocks",
+   "server": "202.50.253.27",
+   "server_port": 19999,
+   "method": "aes-256-gcm",
+   "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+   "tag": "10-意大利Milan-ss"
   },
   {
    "type": "vless",
@@ -177,36 +177,7 @@
      "fingerprint": "firefox"
     }
    },
-   "tag": "10-荷兰Amsterdam-vless"
-  },
-  {
-   "type": "vless",
-   "server": "194.36.37.59",
-   "server_port": 10004,
-   "uuid": "f7376394-cd54-11f1-bb6a-bff6d0326f6a",
-   "transport": {
-    "type": "ws",
-    "path": "/vpnjantit"
-   },
-   "tag": "11-ArmeniaYerevan-vless"
-  },
-  {
-   "type": "vless",
-   "server": "155.103.71.142",
-   "server_port": 443,
-   "uuid": "d342d11e-d224-4463-b982-532309285094",
-   "tls": {
-    "enabled": true,
-    "server_name": "ccc.010304.xyz"
-   },
-   "transport": {
-    "type": "ws",
-    "path": "/fp=chromefp=chrome",
-    "headers": {
-     "Host": "ccc.010304.xyz"
-    }
-   },
-   "tag": "12-未知-vless"
+   "tag": "11-荷兰Amsterdam-vless"
   },
   {
    "type": "vless",
@@ -224,7 +195,49 @@
      "Host": "proxy-1cu.pages.dev"
     }
    },
-   "tag": "13-未知-vless"
+   "tag": "12-未知-vless"
+  },
+  {
+   "type": "vless",
+   "server": "84.235.244.108",
+   "server_port": 22573,
+   "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+   "transport": {
+    "type": "ws",
+    "path": "/",
+    "headers": {
+     "Host": "uae.unixzone.us"
+    }
+   },
+   "tag": "13-阿联酋Dubai-vless"
+  },
+  {
+   "type": "vless",
+   "server": "uae.unixzone.us",
+   "server_port": 22573,
+   "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+   "transport": {
+    "type": "ws",
+    "path": "/",
+    "headers": {
+     "Host": "uae.unixzone.us"
+    }
+   },
+   "tag": "14-阿联酋Dubai-vless"
+  },
+  {
+   "type": "vless",
+   "server": "95.174.68.188",
+   "server_port": 14430,
+   "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
+   "transport": {
+    "type": "ws",
+    "path": "/vless",
+    "headers": {
+     "Host": "95.174.68.188"
+    }
+   },
+   "tag": "15-阿联酋Fujairah-vless"
   },
   {
    "type": "vless",
@@ -244,21 +257,27 @@
      "fingerprint": "firefox"
     }
    },
-   "tag": "14-荷兰Amsterdam-vless"
+   "tag": "16-荷兰Amsterdam-vless"
   },
   {
    "type": "vless",
-   "server": "95.174.68.188",
-   "server_port": 14430,
-   "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
-   "transport": {
-    "type": "ws",
-    "path": "/vless",
-    "headers": {
-     "Host": "95.174.68.188"
+   "server": "62.105.220.106",
+   "server_port": 443,
+   "uuid": "30e52776-55ac-3cb4-8d36-e2910f07e2c3",
+   "flow": "xtls-rprx-vision",
+   "tls": {
+    "enabled": true,
+    "server_name": "u695098u7dae9c0cs220.gogocs.xyz",
+    "alpn": [
+     "h2",
+     "http/1.1"
+    ],
+    "utls": {
+     "enabled": true,
+     "fingerprint": "firefox"
     }
    },
-   "tag": "15-阿联酋Fujairah-vless"
+   "tag": "17-荷兰Amsterdam-vless"
   },
   {
    "type": "direct",
