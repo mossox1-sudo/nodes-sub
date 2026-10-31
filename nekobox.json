@@ -36,19 +36,12 @@
     "02-意大利Milan-ss",
     "03-意大利Milan-ss",
     "04-意大利Milan-ss",
-    "05-意大利Milan-ss",
+    "05-白俄罗斯Minsk-vless",
     "06-意大利Milan-ss",
     "07-意大利Milan-ss",
-    "08-意大利Milan-ss",
-    "09-意大利Milan-ss",
+    "08-未知-vless",
+    "09-阿联酋Fujairah-vless",
     "10-意大利Milan-ss",
-    "11-荷兰Amsterdam-vless",
-    "12-未知-vless",
-    "13-阿联酋Dubai-vless",
-    "14-阿联酋Dubai-vless",
-    "15-阿联酋Fujairah-vless",
-    "16-荷兰Amsterdam-vless",
-    "17-荷兰Amsterdam-vless",
     "direct"
    ],
    "default": "auto"
@@ -61,19 +54,12 @@
     "02-意大利Milan-ss",
     "03-意大利Milan-ss",
     "04-意大利Milan-ss",
-    "05-意大利Milan-ss",
+    "05-白俄罗斯Minsk-vless",
     "06-意大利Milan-ss",
     "07-意大利Milan-ss",
-    "08-意大利Milan-ss",
-    "09-意大利Milan-ss",
-    "10-意大利Milan-ss",
-    "11-荷兰Amsterdam-vless",
-    "12-未知-vless",
-    "13-阿联酋Dubai-vless",
-    "14-阿联酋Dubai-vless",
-    "15-阿联酋Fujairah-vless",
-    "16-荷兰Amsterdam-vless",
-    "17-荷兰Amsterdam-vless"
+    "08-未知-vless",
+    "09-阿联酋Fujairah-vless",
+    "10-意大利Milan-ss"
    ],
    "url": "https://www.google.com/generate_204",
    "interval": "10m",
@@ -81,7 +67,7 @@
   },
   {
    "type": "shadowsocks",
-   "server": "202.50.253.72",
+   "server": "202.50.253.54",
    "server_port": 19999,
    "method": "aes-256-gcm",
    "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
@@ -89,7 +75,7 @@
   },
   {
    "type": "shadowsocks",
-   "server": "202.50.253.81",
+   "server": "202.50.253.45",
    "server_port": 19999,
    "method": "aes-256-gcm",
    "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
@@ -105,23 +91,29 @@
   },
   {
    "type": "shadowsocks",
-   "server": "202.50.253.36",
+   "server": "202.50.253.90",
    "server_port": 19999,
    "method": "aes-256-gcm",
    "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
    "tag": "04-意大利Milan-ss"
   },
   {
-   "type": "shadowsocks",
-   "server": "202.50.253.99",
-   "server_port": 19999,
-   "method": "aes-256-gcm",
-   "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-   "tag": "05-意大利Milan-ss"
+   "type": "vless",
+   "server": "178.172.227.124",
+   "server_port": 14430,
+   "uuid": "1af36694-b548-4b18-89a0-bc076eab4ed7",
+   "transport": {
+    "type": "ws",
+    "path": "/vless",
+    "headers": {
+     "Host": "178.172.227.124"
+    }
+   },
+   "tag": "05-白俄罗斯Minsk-vless"
   },
   {
    "type": "shadowsocks",
-   "server": "202.50.253.63",
+   "server": "202.50.253.45",
    "server_port": 19999,
    "method": "aes-256-gcm",
    "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
@@ -136,94 +128,22 @@
    "tag": "07-意大利Milan-ss"
   },
   {
-   "type": "shadowsocks",
-   "server": "202.50.253.54",
-   "server_port": 19999,
-   "method": "aes-256-gcm",
-   "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-   "tag": "08-意大利Milan-ss"
-  },
-  {
-   "type": "shadowsocks",
-   "server": "202.50.253.45",
-   "server_port": 19999,
-   "method": "aes-256-gcm",
-   "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-   "tag": "09-意大利Milan-ss"
-  },
-  {
-   "type": "shadowsocks",
-   "server": "202.50.253.27",
-   "server_port": 19999,
-   "method": "aes-256-gcm",
-   "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-   "tag": "10-意大利Milan-ss"
-  },
-  {
    "type": "vless",
-   "server": "s171.wagahaha.xyz",
+   "server": "155.103.71.142",
    "server_port": 443,
-   "uuid": "30e52776-55ac-3cb4-8d36-e2910f07e2c3",
-   "flow": "xtls-rprx-vision",
+   "uuid": "d342d11e-d224-4463-b982-532309285094",
    "tls": {
     "enabled": true,
-    "server_name": "u695098u7dae9c0cs220.gogocs.xyz",
-    "alpn": [
-     "h2",
-     "http/1.1"
-    ],
-    "utls": {
-     "enabled": true,
-     "fingerprint": "firefox"
-    }
-   },
-   "tag": "11-荷兰Amsterdam-vless"
-  },
-  {
-   "type": "vless",
-   "server": "213.111.148.137",
-   "server_port": 443,
-   "uuid": "40af9131-d540-448a-bc56-5bba147a1dc3",
-   "tls": {
-    "enabled": true,
-    "server_name": "proxy-1cu.pages.dev"
+    "server_name": "ccc.010304.xyz"
    },
    "transport": {
     "type": "ws",
-    "path": "/fp=android",
+    "path": "/fp=chromefp=chrome",
     "headers": {
-     "Host": "proxy-1cu.pages.dev"
+     "Host": "ccc.010304.xyz"
     }
    },
-   "tag": "12-未知-vless"
-  },
-  {
-   "type": "vless",
-   "server": "84.235.244.108",
-   "server_port": 22573,
-   "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
-   "transport": {
-    "type": "ws",
-    "path": "/",
-    "headers": {
-     "Host": "uae.unixzone.us"
-    }
-   },
-   "tag": "13-阿联酋Dubai-vless"
-  },
-  {
-   "type": "vless",
-   "server": "uae.unixzone.us",
-   "server_port": 22573,
-   "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
-   "transport": {
-    "type": "ws",
-    "path": "/",
-    "headers": {
-     "Host": "uae.unixzone.us"
-    }
-   },
-   "tag": "14-阿联酋Dubai-vless"
+   "tag": "08-未知-vless"
   },
   {
    "type": "vless",
@@ -237,47 +157,15 @@
      "Host": "95.174.68.188"
     }
    },
-   "tag": "15-阿联酋Fujairah-vless"
+   "tag": "09-阿联酋Fujairah-vless"
   },
   {
-   "type": "vless",
-   "server": "s170.gogocs.xyz",
-   "server_port": 443,
-   "uuid": "30e52776-55ac-3cb4-8d36-e2910f07e2c3",
-   "flow": "xtls-rprx-vision",
-   "tls": {
-    "enabled": true,
-    "server_name": "u695098u7dae9c0cs220.gogocs.xyz",
-    "alpn": [
-     "h2",
-     "http/1.1"
-    ],
-    "utls": {
-     "enabled": true,
-     "fingerprint": "firefox"
-    }
-   },
-   "tag": "16-荷兰Amsterdam-vless"
-  },
-  {
-   "type": "vless",
-   "server": "62.105.220.106",
-   "server_port": 443,
-   "uuid": "30e52776-55ac-3cb4-8d36-e2910f07e2c3",
-   "flow": "xtls-rprx-vision",
-   "tls": {
-    "enabled": true,
-    "server_name": "u695098u7dae9c0cs220.gogocs.xyz",
-    "alpn": [
-     "h2",
-     "http/1.1"
-    ],
-    "utls": {
-     "enabled": true,
-     "fingerprint": "firefox"
-    }
-   },
-   "tag": "17-荷兰Amsterdam-vless"
+   "type": "shadowsocks",
+   "server": "202.50.253.81",
+   "server_port": 19999,
+   "method": "aes-256-gcm",
+   "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+   "tag": "10-意大利Milan-ss"
   },
   {
    "type": "direct",
