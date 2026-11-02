@@ -36,12 +36,14 @@
     "02-意大利Milan-ss",
     "03-意大利Milan-ss",
     "04-意大利Milan-ss",
-    "05-白俄罗斯Minsk-vless",
+    "05-意大利Milan-ss",
     "06-意大利Milan-ss",
     "07-意大利Milan-ss",
-    "08-未知-vless",
+    "08-白俄罗斯Minsk-vless",
     "09-阿联酋Fujairah-vless",
-    "10-意大利Milan-ss",
+    "10-香港HongKong-vless",
+    "11-未知-vless",
+    "12-阿联酋Dubai-vless",
     "direct"
    ],
    "default": "auto"
@@ -54,12 +56,14 @@
     "02-意大利Milan-ss",
     "03-意大利Milan-ss",
     "04-意大利Milan-ss",
-    "05-白俄罗斯Minsk-vless",
+    "05-意大利Milan-ss",
     "06-意大利Milan-ss",
     "07-意大利Milan-ss",
-    "08-未知-vless",
+    "08-白俄罗斯Minsk-vless",
     "09-阿联酋Fujairah-vless",
-    "10-意大利Milan-ss"
+    "10-香港HongKong-vless",
+    "11-未知-vless",
+    "12-阿联酋Dubai-vless"
    ],
    "url": "https://www.google.com/generate_204",
    "interval": "10m",
@@ -67,7 +71,7 @@
   },
   {
    "type": "shadowsocks",
-   "server": "202.50.253.54",
+   "server": "202.50.253.36",
    "server_port": 19999,
    "method": "aes-256-gcm",
    "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
@@ -75,7 +79,7 @@
   },
   {
    "type": "shadowsocks",
-   "server": "202.50.253.45",
+   "server": "202.50.253.81",
    "server_port": 19999,
    "method": "aes-256-gcm",
    "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
@@ -91,29 +95,23 @@
   },
   {
    "type": "shadowsocks",
-   "server": "202.50.253.90",
+   "server": "202.50.253.27",
    "server_port": 19999,
    "method": "aes-256-gcm",
    "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
    "tag": "04-意大利Milan-ss"
   },
   {
-   "type": "vless",
-   "server": "178.172.227.124",
-   "server_port": 14430,
-   "uuid": "1af36694-b548-4b18-89a0-bc076eab4ed7",
-   "transport": {
-    "type": "ws",
-    "path": "/vless",
-    "headers": {
-     "Host": "178.172.227.124"
-    }
-   },
-   "tag": "05-白俄罗斯Minsk-vless"
+   "type": "shadowsocks",
+   "server": "202.50.253.72",
+   "server_port": 19999,
+   "method": "aes-256-gcm",
+   "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
+   "tag": "05-意大利Milan-ss"
   },
   {
    "type": "shadowsocks",
-   "server": "202.50.253.45",
+   "server": "202.50.253.72",
    "server_port": 19999,
    "method": "aes-256-gcm",
    "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
@@ -121,11 +119,50 @@
   },
   {
    "type": "shadowsocks",
-   "server": "202.50.253.18",
+   "server": "202.50.253.36",
    "server_port": 19999,
    "method": "aes-256-gcm",
    "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
    "tag": "07-意大利Milan-ss"
+  },
+  {
+   "type": "vless",
+   "server": "178.172.227.228",
+   "server_port": 14430,
+   "uuid": "b6e5dc56-836f-48c1-9163-b0b0b43b647d",
+   "transport": {
+    "type": "ws",
+    "path": "/vless",
+    "headers": {
+     "Host": "178.172.227.228"
+    }
+   },
+   "tag": "08-白俄罗斯Minsk-vless"
+  },
+  {
+   "type": "vless",
+   "server": "95.174.68.188",
+   "server_port": 14430,
+   "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
+   "transport": {
+    "type": "ws",
+    "path": "/vless",
+    "headers": {
+     "Host": "95.174.68.188"
+    }
+   },
+   "tag": "09-阿联酋Fujairah-vless"
+  },
+  {
+   "type": "vless",
+   "server": "152.175.6.229",
+   "server_port": 31884,
+   "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
+   "tls": {
+    "enabled": true,
+    "server_name": "hk010.zestapp778.com"
+   },
+   "tag": "10-香港HongKong-vless"
   },
   {
    "type": "vless",
@@ -143,29 +180,21 @@
      "Host": "ccc.010304.xyz"
     }
    },
-   "tag": "08-未知-vless"
+   "tag": "11-未知-vless"
   },
   {
    "type": "vless",
-   "server": "95.174.68.188",
-   "server_port": 14430,
-   "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
+   "server": "84.235.244.108",
+   "server_port": 22573,
+   "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
    "transport": {
     "type": "ws",
-    "path": "/vless",
+    "path": "/",
     "headers": {
-     "Host": "95.174.68.188"
+     "Host": "uae.unixzone.us"
     }
    },
-   "tag": "09-阿联酋Fujairah-vless"
-  },
-  {
-   "type": "shadowsocks",
-   "server": "202.50.253.81",
-   "server_port": 19999,
-   "method": "aes-256-gcm",
-   "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=",
-   "tag": "10-意大利Milan-ss"
+   "tag": "12-阿联酋Dubai-vless"
   },
   {
    "type": "direct",
