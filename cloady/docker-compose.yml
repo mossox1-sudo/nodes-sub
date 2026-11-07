@@ -1,0 +1,9 @@
+services:
+  xray:
+    build: .
+    environment:
+      - UUID=${UUID}
+      - WSPATH=${WSPATH:-/tk-rail}
+      - PORT=8080
+    ports:
+      - "8080:8080"
